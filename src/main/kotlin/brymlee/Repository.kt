@@ -11,6 +11,7 @@ const val DB_PASSWORD = ""
 const val CREATE_QUERY = "CREATE TABLE CUSTOMER(id int primary key, firstName varchar(255), lastName varchar(255))"
 const val INSERT_QUERY = "INSERT INTO CUSTOMER" + "(id, firstName, lastName) values" + "(?,?,?)"
 const val SELECT_QUERY = "select * from CUSTOMER"
+
 class Repository {
 
     fun getDBConnection() : Connection {
